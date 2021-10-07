@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap') ;
+
 .App {
   text-align: center;
 }
@@ -7,21 +9,23 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media ( prefers-reduced-motion : no-preference ) {
+
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
 }
 
 .App-header {
+  align-items: center;
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .App-link {
@@ -29,10 +33,121 @@
 }
 
 @keyframes App-logo-spin {
+
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.home-page {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: Josefin Sans , sans-serif;
+}
+
+.card-list {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-shadow: 1px 1px #e0e0e0;
+  width: 75%;
+}
+
+.flex-shrink-0 {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.category-list {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.welcome-page {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.input-group {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.cart {
+  align-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: column wrap;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cart-page {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.cart-items {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.cart-item {
+  display: flex;
+}
+
+.list-group {
+  width: max-content;
+}
+
+.details-page {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.h3-title {
+  font-size: x-large;
+  font-weight: 800;
+  text-align: center;
+}
+
+.h4-title {
+  text-shadow: 1px 2px #e0e0e0;
+}
+
+.details {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.search-bar {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: column nowrap;
 }
